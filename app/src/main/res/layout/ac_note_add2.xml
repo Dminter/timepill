@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llNoteAdd"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?background_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawerEmoticons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etContent"
+                    style="@style/mEditText"
+                    android:hint="记录下今天的心情点滴~" />
+
+                <ImageView
+                    android:id="@+id/ivImg"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/ftEmoticons"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end" />
+        </android.support.v4.widget.DrawerLayout>
+    </RelativeLayout>
+</LinearLayout>

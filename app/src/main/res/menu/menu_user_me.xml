@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mode"
+        android:title="夜间/白天模式" />
+    <item
+        android:id="@+id/edit"
+        android:title="编辑个人资料" />
+
+    <item
+        android:id="@+id/setting"
+        android:title="设置" />
+    <item
+        android:id="@+id/link_old"
+        android:title="退回旧版【需先卸载新版】" />
+</menu>

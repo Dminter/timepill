@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="?background_color"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="45dip"
+    android:orientation="vertical">
+
+
+    <LinearLayout style="@style/cell_bg">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dip"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/head_icon" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical">
+
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <LinearLayout
+                                    android:id="@+id/llReply"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/Reply"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text=""
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dip" />
+
+                                    <com.malinskiy.materialicons.widget.IconTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        android:id="@+id/replyIcon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="{md-mode-comment}"
+                                        android:textColor="@color/gray"
+                                        android:textSize="18dp"
+                                        android:visibility="gone"
+                                        app:hacky_preview="true" />
+
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tvAuthor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_toLeftOf="@+id/llReply"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/author_color"
+                                    android:textSize="16dip"
+                                    android:textStyle="bold" />
+
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/tvTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:paddingRight="-6dp"
+                                    android:text=""
+                                    android:textColor="@color/gray"
+                                    android:textSize="14dip" />
+
+                                <TextView
+                                    android:id="@+id/tvTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_toLeftOf="@+id/tvTitle"
+                                    android:singleLine="true"
+                                    android:textColor="@color/gray"
+                                    android:textSize="14dip" />
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <com.zncm.timepill.modules.view.MyTextView
+                        android:id="@+id/tvContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@+id/ivPosition"
+                        android:autoLink="all"
+                        android:gravity="left"
+                        android:lineSpacingMultiplier="1.4"
+                        android:text=""
+                        android:textColor="?text_color"
+                        android:textIsSelectable="true"
+                        android:textSize="16dip" />
+
+                    <ImageView
+                        android:id="@+id/ivPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:scaleType="fitStart"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/viewDiv"
+        layout="@layout/view_div" />
+</LinearLayout>

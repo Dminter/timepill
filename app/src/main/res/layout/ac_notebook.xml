@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llBg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?background_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="180dip"
+            android:layout_height="180dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher" />
+
+
+        <EditText
+            android:id="@+id/etSubject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:hint="主题"
+            android:textColor="?text_color"
+            android:textSize="14dip" />
+
+
+        <EditText
+            android:id="@+id/etExpired"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:editable="false"
+            android:gravity="left"
+            android:hint="过期时间"
+            android:textColor="?text_color"
+            android:textSize="14dip"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:hint="描述"
+            android:maxLines="4"
+            android:textColor="?text_color"
+            android:textSize="14dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbPrivacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="公开" />
+
+            <CheckBox
+                android:id="@+id/cbDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:checked="false"
+                android:text="默认" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDel"
+            style="@style/mButtonRed"
+            android:layout_marginTop="10dp"
+            android:text="删除" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

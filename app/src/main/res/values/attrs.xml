@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="text_color" format="reference" />
+    <attr name="tab_color" format="reference" />
+    <attr name="bottom_color" format="reference" />
+    <attr name="div_color" format="reference" />
+    <attr name="btn_bg" format="reference" />
+    <attr name="background_color" format="reference" />
+    <attr name="bg_card" format="reference" />
+    <attr name="button_layout_selector" format="reference" />
+    <attr name="cardItemBackground" format="reference" />
+    <attr name="cardItemBackgroundColor" format="reference" />
+    <attr name="listMenuOverflowButton" format="reference" />
+    <attr name="actionbar_color" format="reference" />
+</resources>

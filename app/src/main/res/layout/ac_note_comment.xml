@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llBg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/etComment"
+        style="@style/mEditText"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:hint="输入回复内容~"
+        android:textColor="?text_color" />
+</LinearLayout>

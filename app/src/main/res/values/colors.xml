@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- card colors -->
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow_1">#d4d4d4</color>
+    <color name="card_shadow_2">#dddddd</color>
+    <color name="card_detailing">#eee</color>
+
+
+    <color name="link_color">#566B95</color>
+
+
+    <color name="bg_color">#FFFFFF</color>
+
+    <color name="theme_color">#2DBD60</color>
+
+    <color name="mi_toolbar_bg">#EEEEEF</color>
+    <color name="mi_divide">#DEDEDE</color>
+    <color name="mi_bottom_bg">#F7F7F7</color>
+    <color name="mi_bottom_divide">#CACACA</color>
+
+    <color name="mi_text">#AAAAAB</color>
+    <color name="mi_text_sel">#686868</color>
+
+    <color name="tab_color">#E9E9E9</color>
+
+
+    <color name="dark_light">#ff757575</color>
+
+
+    <color name="night_bar">#171718</color>
+    <color name="night_bg">#1D1F21</color>
+    <color name="night_bg_sel">#494A4C</color>
+
+
+    <color name="actionbar_color">#03a9f4</color>
+    <color name="actionbar_light">#ff008ab8</color>
+
+    <color name="left_text">#1F1F1F</color>
+
+
+    <color name="card_item_background_default">#FDFDFE</color>
+    <color name="card_item_background_pressed">#D8D8D8</color>
+    <color name="card_item_shadow">#10000000</color>
+    <color name="day_bg">#FFFFFF</color>
+
+    <color name="primary_dark">#247D42</color>
+    <color name="primary">#2DBD60</color>
+    <color name="accent">#2DBD60</color>
+
+
+    <color name="darker_gray">#666666</color>
+    <color name="actionbar_color2">#41ace9</color>
+
+    <color name="actionbar_dark_color">#171718</color>
+    <color name="vip_color">#FF0000</color>
+
+
+    <color name="card_item_backgroundcolor">#ffe6e6e6</color>
+    <color name="card_item_backgroundcolor_sel">#ffe2e2e2</color>
+    <color name="background_light">#ffffffff</color>
+    <color name="background_light2">#ffe2e2e2</color>
+    <color name="actionbar_dark2">#353535</color>
+    <color name="actionbar_dark">#ffff4444</color>
+
+    <color name="text_light">#ffffffff</color>
+    <color name="text_dark">#ff787878</color>
+    <color name="background_dark">#ff444444</color>
+    <color name="sidebar_right_focus_bg">#ff34819d</color>
+
+    <color name="bg_color2">#ffffffff</color>
+    <!--left-->
+
+    <color name="navigation_view">#DADADC</color>
+    <color name="navigation_items">#ffffffff</color>
+    <color name="gray_navegation">#ffffffff</color>
+    <color name="blue_dark">#0099CC</color>
+    <!-- =========================== -->
+
+    <color name="light_gray">#ffbbbbbb</color>
+    <color name="list_row_selected">#ff78c8e6</color>
+    <color name="dark_selected_row">#ff2d3340</color>
+
+    <color name="div_color">#d2dbcf</color>
+
+
+    <color name="author_color">#2fa4e7</color>
+    <color name="sel_bg">#f2f2f2</color>
+
+    <color name="fl">#F3F3F3</color>
+
+    <color name="text_color">#ffffffff</color>
+    <color name="searchbox_bg">#fff0efef</color>
+
+    <color name="rectangle_bg">#ffecebeb</color>
+
+    <color name="devider">#ffbfbfbf</color>
+    <color name="list_bg">#fff5f5f5</color>
+    <color name="text_2">#ff000000</color>
+    <!-- =========================== -->
+
+    <color name="little_yello">#ffb43c</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#00A6FC</color>
+    <color name="wordgreen">#98AC38</color>
+
+    <color name="menu_bg_color">#ffcccccc</color>
+    <color name="menu_tv_color">#ff6699ff</color>
+    <color name="menu_tv_sel_color">#FF0000</color>
+    <color name="menu_tv_title_cut_line_color">#FF0000</color>
+    <color name="color_lv_bar">#ADADAD</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent2">#5f333333</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_sel">#fff0efef</color>
+    <color name="black">#000000</color>
+
+    <color name="black_2">#808080</color>
+    <color name="menu_color">#3B3B3B</color>
+    <color name="gray">#808080</color>
+    <color name="little_red">#FF0033</color>
+    <color name="corner_box">#ffcccccc</color>
+
+</resources>

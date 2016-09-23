@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="?background_color"
+    android:visibility="gone"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_div" />
+
+    <RelativeLayout style="@style/cell_bg">
+
+
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivIcon"
+                android:minHeight="30dp"
+                android:text="1111111111"
+                android:singleLine="true"
+                android:textColor="@color/author_color"
+                android:textSize="16dip"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llContent"
+                android:layout_width="fill_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/tvContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="left"
+                    android:ellipsize="end"
+                    android:layout_toLeftOf="@+id/ivPosition"
+                    android:text="4444444444444"
+                    android:textColor="?text_color"
+                    android:textSize="16dip" />
+
+
+                <ImageView
+                    android:id="@+id/ivPhoto"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvOp"
+            android:layout_below="@+id/llTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="展开"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/author_color"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>

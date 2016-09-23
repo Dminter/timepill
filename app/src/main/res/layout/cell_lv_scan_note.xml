@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="?background_color"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/viewDiv"
+        layout="@layout/view_div" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llTime"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="03"
+                android:textColor="?text_color"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tvTimeMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="11月"
+                android:textColor="?text_color"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/cell_bg"
+            android:layout_width="fill_parent"
+            android:layout_margin="12dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivPhoto"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher"
+                    android:visibility="gone" />
+
+                <com.zncm.timepill.modules.view.MyTextView
+                    android:id="@+id/tvContent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/ivPhoto"
+                    android:autoLink="web"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:text="11121"
+                    android:textColor="?text_color"
+                    android:textSize="14dip" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

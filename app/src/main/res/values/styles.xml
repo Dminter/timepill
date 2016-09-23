@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="shadowText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="mEditText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?text_color</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:gravity">top|left</item>
+        <item name="android:maxLength">5000</item>
+    </style>
+
+    <style name="mEditSearchText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:maxLength">10</item>
+    </style>
+
+
+    <style name="etPwd">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:digits">0123456789</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:password">true</item>
+    </style>
+
+    <style name="tvShadow">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">@color/gray</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="tvWhiteShadow">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">#CAC9C9</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="tvHome">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="tvTab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/light_gray</item>
+    </style>
+
+    <style name="tvTabSel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="tvSetting">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="label_split">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10.0dip</item>
+    </style>
+
+    <style name="setting_table_row">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">45dip</item>
+        <item name="android:background">@drawable/sel_item</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="setting_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">15dip</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="PasscodeInputItemStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:src">@drawable/unlocked</item>
+    </style>
+
+    <style name="PasscodeKeyboardButtonStyle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff464646</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/passcode_keyboard_button</item>
+        <item name="android:layout_width">45dip</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:layout_margin">5.0dip</item>
+    </style>
+
+
+    <style name="BigButton">
+        <item name="android:background">@null</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/transparent2</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="cell_bg">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:textColor">?text_color</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:background">?cardItemBackground</item>
+    </style>
+
+
+    <style name="settingCellBg">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">-5dp</item>
+        <item name="android:layout_marginRight">-5dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:minHeight">45dp</item>
+        <item name="android:textColor">?text_color</item>
+        <item name="android:background">?cardItemBackground</item>
+    </style>
+
+
+    <style name="mText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="mBigText" parent="mText">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+
+    <style name="mCenterText" parent="mText">
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="mSettingText" parent="mText">
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">25.0dip</item>
+    </style>
+
+
+    <style name="cell_time">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5.0dip</item>
+        <item name="android:padding">1.0dip</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">?text_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">?cardItemBackground</item>
+    </style>
+
+    <style name="cell_bg_no_div">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">-20.0dip</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:textColor">?text_color</item>
+        <item name="android:background">?cardItemBackground</item>
+    </style>
+
+    <style name="MainTheme" parent="Theme_common">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="Theme_light" parent="@style/Theme_common">
+        <item name="android:itemBackground">@color/white</item>
+        <item name="tab_color">@color/mi_toolbar_bg</item>
+        <item name="bottom_color">@color/mi_bottom_bg</item>
+        <item name="div_color">@color/mi_divide</item>
+        <item name="btn_bg">@drawable/button</item>
+        <item name="cardItemBackground">@drawable/card</item>
+        <item name="background_color">@color/white</item>
+        <item name="text_color">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="actionbar_color">@color/actionbar_color</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="actionBarStyle">@style/mLight.ActionBar</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+        <item name="md_dark_theme">false</item>
+    </style>
+
+    <style name="Theme_common" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+
+    </style>
+
+
+    <style name="Theme_dark" parent="@style/Theme_common">
+        <item name="android:itemBackground">@color/black</item>
+        <item name="btn_bg">@drawable/button_night</item>
+        <item name="cardItemBackground">@drawable/bg_item_dark</item>
+        <item name="background_color">@color/night_bg</item>
+        <item name="tab_color">@color/night_bg</item>
+        <item name="bottom_color">@color/night_bg</item>
+        <item name="div_color">@color/night_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="text_color">@color/text_dark</item>
+        <item name="actionbar_color">@color/actionbar_dark_color</item>
+        <item name="actionBarStyle">@style/mLight.ActionBar</item>
+        <item name="android:actionBarStyle">@style/mLight.ActionBar</item>
+        <item name="android:textAppearance">@style/mLight.TextAppearance</item>
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+        <item name="md_dark_theme">true</item>
+    </style>
+
+
+    <style name="mLight.TextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="actionBarStyle">@style/mLight.ActionBar</item>
+    </style>
+
+    <style name="mLight.ActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">?actionbar_color</item>
+        <item name="backgroundSplit">?actionbar_color</item>
+        <item name="android:backgroundStacked">#FFFFFF</item>
+        <item name="android:backgroundSplit">@color/red</item>
+    </style>
+
+
+    <style name="activityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+
+    <style name="mButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_blue</item>
+    </style>
+
+    <style name="mButtonBig" parent="@style/mButton">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="mButtonBigFull" parent="@style/mButtonBig">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="mButtonBigFullWhite" parent="@style/mButtonBigFull">
+        <item name="android:background">@drawable/button_white</item>
+    </style>
+
+    <style name="mButtonRed">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@drawable/button_red</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+    </style>
+
+    <style name="iconText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">28dp</item>
+    </style>
+</resources>

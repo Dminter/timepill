@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?background_color"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_div" />
+
+            <LinearLayout style="@style/cell_bg">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivIcon"
+                            android:layout_width="48dip"
+                            android:layout_height="48dip"
+                            android:layout_marginRight="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="visible"
+                            android:scaleType="centerCrop" />
+
+
+                        <TextView
+                            android:id="@+id/btnAttention"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text=""
+                            android:singleLine="true"
+                            android:visibility="gone"
+                            android:textColor="@color/author_color"
+                            android:textSize="16dip"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/ivIcon"
+                            android:layout_alignWithParentIfMissing="true"
+                            android:layout_toLeftOf="@+id/btnAttention"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvAuthor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:singleLine="true"
+                                android:textColor="@color/author_color"
+                                android:textSize="16dip"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/gray"
+                                android:textSize="14dip" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <com.zncm.timepill.modules.view.MyTextView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/tvContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left"
+                        android:layout_toLeftOf="@+id/ivPosition"
+                        android:text=""
+                        android:textColor="?text_color"
+                        android:textSize="16dip" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

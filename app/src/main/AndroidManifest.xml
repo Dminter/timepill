@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zncm.timepill"
+    android:installLocation="auto"
+    android:versionCode="230"
+    android:versionName="2.3">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:name=".global.TpApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme_light">
+        <activity android:name=".modules.ui.Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".modules.ui.NoteDetailsAc"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".modules.ui.NoteCommentAc"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".modules.ui.PhotoShowAc" />
+        <activity android:name=".modules.ui.LoginAc" />
+        <activity
+            android:name=".modules.ui.HomeTabActivity"
+            android:theme="@style/MainTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".modules.ui.UserNoteBookAc" />
+        <activity android:name=".modules.ui.RegAc" />
+        <activity
+            android:name=".modules.ui.NoteNewAc"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"></action>
+
+                <category android:name="android.intent.category.DEFAULT"></category>
+
+                <data android:mimeType="text/*"></data>
+            </intent-filter>
+        </activity>
+        <activity android:name=".modules.ui.UserHomeAc" />
+        <activity android:name=".modules.ui.CustomFaceAc" />
+        <activity android:name=".modules.ui.SearchPopActivity" />
+        <activity android:name=".modules.ui.UserSettingAc" />
+        <activity android:name=".modules.ui.IndexActivity" />
+        <activity android:name=".modules.ui.MsgActivity" />
+        <activity android:name=".modules.ui.ShowInfoActivity" />
+        <activity android:name=".modules.ui.NoteBookAc" />
+        <activity android:name=".modules.ui.NoteInBookAc" />
+        <activity android:name=".modules.ui.FloatingTitleBarActivity" />
+        <activity android:name="com.zncm.timepill.modules.view.pick.CustomGalleryActivity" />
+        <activity android:name="com.zncm.timepill.modules.ui.RelationAc" />
+        <activity android:name=".modules.ui.UserUpdateAc" />
+        <activity
+            android:name=".modules.ui.PwdActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <activity android:name="com.zncm.timepill.modules.ui.SettingAc" />
+        <activity android:name=".modules.ui.TalkListAc" />
+        <activity android:name=".modules.ui.DraftListAc" />
+        <activity android:name=".modules.ui.AboutAc" />
+        <activity android:name=".modules.ui.ThanksActivity" />
+        <activity
+            android:name=".modules.ui.TalkAc"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".modules.ui.SplashAc" />
+
+        <!-- UMENG_ADD -->
+
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="53a8defb56240b03ee0016f9"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="mx300"></meta-data>
+
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService"></service>
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+
+
+        <!-- UMENG_END -->
+
+
+        <!--  jpush-->
+
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.zncm.timepill" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+
+        <!-- Required SDK 核心功能-->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!--Required  显示通知栏 -->
+                <category android:name="com.zncm.timepill" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined.    用户自定义的广播接收器-->
+        <receiver
+            android:name=".modules.receiver.TpReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!--Required  用户打开自定义通知栏的intent-->
+                <category android:name="com.zncm.timepill" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="3cd4420cf525f22756f31e14" />
+        <!--  </>值来自开发者平台取得的AppKey-->
+        <!--  jpush-->
+
+    </application>
+
+    <!-- UMENG_ADD -->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <!-- UMENG_END -->
+
+
+    <!--jpush-->
+
+
+    <!-- Required 自定义用来收发消息的相关权限 -->
+    <permission
+        android:name="com.zncm.timepill.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="com.zncm.timepill.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+
+    <!--jpush-->
+
+
+</manifest>

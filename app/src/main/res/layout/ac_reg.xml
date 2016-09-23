@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/bg_color"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etUserNickName"
+            style="@style/mEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_accept"
+            android:drawablePadding="10dp"
+            android:hint="昵称"
+            />
+
+        <EditText
+            android:id="@+id/etUserName"
+            style="@style/mEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_action_person"
+            android:drawablePadding="10dp"
+            android:hint="邮箱"
+            />
+
+        <EditText
+            android:id="@+id/etUserPWD"
+            style="@style/mEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_action_accounts"
+            android:drawablePadding="10dp"
+            android:hint="密码"
+            android:inputType="textPassword"
+            />
+
+
+        <TextView
+            android:id="@+id/btnReg"
+            style="@style/mButtonBigFull"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="注册"/>
+
+    </LinearLayout>
+</LinearLayout>

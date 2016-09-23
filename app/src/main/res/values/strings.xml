@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- pulltorefresh -->
+    <string name="pull_to_refresh_pull_label">吃药中╥﹏╥</string>
+    <string name="pull_to_refresh_release_label">吃药中╥﹏╥</string>
+    <string name="pull_to_refresh_refreshing_label">吃药中╥﹏╥</string>
+    <string name="pull_to_loadmore">吃药中╥﹏╥</string>
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label" translatable="false">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label" translatable="false">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label" translatable="false">@string/pull_to_refresh_refreshing_label</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+
+
+<string name="app_about">
+    胶囊日记 http://www.timepill.net \n第三方Android客户端
+</string>
+<string name="app_version">
+     V1.4.0\n
+
+[+]新icon\n
+[+]双击标题刷新列表\n
+[+]全新布局,优化显示,百变主题\n
+[+]回复顺序显示\n
+[+]合并提醒\n
+[+]写日记放到右上角,简介明了,以前的设置项放到左边菜单\n
+[+]日记列表点击回复可快速回复\n
+[+]我关注,长按取消关注\n
+[+]日记本长按,修改日记本信息\n
+[+]全新日记本浏览界面,合并当天日记,浏览起来更加方便\n
+[-]分割布局,内容也被切割,TAB页占用太大空间\n
+[-]去掉右下角的刷新和写日记,破坏整体美观\n
+[-]去掉红名\n
+
+
+
+     V1.3.0\n
+列表图片按照原比例展示\n
+提醒界面新增全部已读并合并了对同一条日记的提醒\n
+新增话题日记,浏览和写话题日记\n
+新增日记界面优化,发图片前新增预览功能,也可以发之前删除图片\n
+修复修改日记不能修改日记本的bug\n
+日记本界面UI调整变为网格布局\n
+支持查看别人的日记本和过期日记\n
+新进颜文字 可自定义六个颜文字(此处可灵活用于添加尾巴,日记签名等) 感谢 颜文字提供者 故城 哆啦zZ～梦小姐 请赐我白綾三尺。 Ｃheryl ﹌可 等\n
+
+ V1.2.0\n
+新增夜间模式,晚上阅读更有爱\n
+新增颜文字,合理使用更能表达感情、思想\n
+全新UI设计,排版更加合理更富于美感\n
+提醒被拿出来放到标题栏上,并且以小红点形式提醒你\n
+右下角TOP按钮改为透明的新增笔记和刷新按钮\n
+新增右侧菜单内含切换夜间模式,无图模式设置等快捷按钮,左侧最末一行新增版本号作者,点击进入关于内含关注作者的按钮\n
+标题栏加上刷新进图,每一次操作带有反馈,亲切友好,妥妥的\n
+感谢 @狐狸仙人是沁的防空洞 的新软件图标\n
+新增缓存清理,在设置里面\n
+新增版本号显示,在侧边栏最底部,点击进入关于界面可关注开发者\n
+修复BUG\n
+不提醒的BUG\n
+自我介绍只能显示部分\n
+点击自我介绍编辑后返回,去评论时看到刚才的自我介绍\n
+日记不能修改\n
+自动更新,原来在2G网络条件下不弹出自动更新\n
+日记本 过期的无删除按钮 过期的只能查看不能编辑 删除 评论 过期日记本排序 BUG\n
+
+
+ V1.1.0\n
+修复Android4.4以上机型 长按直接进到日记详情 BUG\n
+日记列表紧凑导致换行也紧凑了,换成空格\n
+日记评论未发出保存草稿\n
+图片长按下载,点击查看大图带进度了,等待从此有期\n
+修改日记不支持修改日记本,接口未提供支持\n
+打开左侧菜单,新增个人主页,日记本,关注\n
+无图模式点击用户名称可进入主页\n
+个人信息修改,可修改头像,名字和介绍\n
+新增日记本管理功能,查看日记本,查看过期日记本里的日记,新增修改日记本\n
+新增关注,查看关注被关注列表,可取消关注或者取消被关注\n
+同一天的日记 不显示日记 仅显示时间 \n
+
+ V1.0.6\n
+首先感谢内测用户不变自然丶 怪先生 请赐我白綾三尺 爱幻想的小黄瓜 静流 一只黝黑的白 柠檬 浮生若梦等的意见和建议...\n
+1.新增无图模式,设置里可开启,新增记忆上次成功登录的邮箱,新增个人主页并可以进行关注和取消关注\n
+2.UI优化,列表新增TOP按钮,个人主页拆分当日日记和个人信息两个页面,日记详情里可编辑删除日记,评论界面优化,日记主人可删除该日记下别人的评论,书名号改为中文的,个人头像变小\n
+3.修复已知多个BUG\n
+4.删除均加上提示框,评论写了内容返回也提示,防止误操作\n
+5.新增日记修改,可加来自Android端的尾巴,可发原图,软件可接收其他程序分享的文本内容\n
+6.新增软件加密\n
+7.新ICON高端大气上档次\n
+8.新增通知栏提醒配置项,可仅提醒不带声音,系统分享可快速告诉你的小伙伴胶囊有APP咯\n
+
+
+V1.0.4\n
+1.全面兼容Android2.2以上版本\n
+2.UI优化,写日记评论图标更换,布局优化,列表展示小图,图片可点击查看大图\n
+3.修复多个BUG(日记重复,评论重复BUG,各种异常弹出处理)\n
+4.提醒功能实现(网站评论的提示暂时无法推送到手机,可查评论列表看到)\n
+5.退出后,返回还能保持上次浏览页面不用每次显示欢迎界面\n
+6.关注,可查看某人的个人信息并实现关注和取消关注\n
+7.评论列表添加用户头像的显示\n
+V1.0.2\n
+1.用户授权登录\n
+2.查看全站最新日记,我的日记以及关注的日记\n
+3.写日记带图片,删除自己的日记\n
+4.日记评论和回复\n
+5.日记头像日记图片展示,图片缓存到本地不多耗费用户流量\n
+</string>
+    <string name="app_name">胶囊日记</string>
+
+</resources>

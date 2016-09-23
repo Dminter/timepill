@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?background_color"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="fill_parent"
+        android:gravity="center|left"
+        android:text="11111"
+        android:textSize="24sp"
+        android:layout_margin="40dp"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

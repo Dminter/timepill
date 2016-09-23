@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\Dev\Me\timepill\umemgsdk\src\main\jniLibs"><file name="armeabi/libbspatch.so" path="D:\Dev\Me\timepill\umemgsdk\src\main\jniLibs\armeabi\libbspatch.so"/></source></dataSet><dataSet config="release"><source path="D:\Dev\Me\timepill\umemgsdk\src\release\jniLibs"/></dataSet></merger>

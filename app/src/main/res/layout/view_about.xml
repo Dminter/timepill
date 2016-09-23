@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/qr" />
+
+        <TextView
+            android:id="@+id/tvVersion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:text="加上善微信 @浙水之南"
+            android:textColor="?text_color"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="20.0dip"
+            android:autoLink="web"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.5"
+            android:text="@string/app_about"
+            android:textColor="@color/light_gray"
+            android:textSize="16.0sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

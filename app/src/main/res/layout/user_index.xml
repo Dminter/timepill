@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?background_color"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/rlBg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/ivIcon"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/head_icon" />
+
+                    <TextView
+                        android:id="@+id/tvOp"
+                        style="@style/mButton"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignWithParentIfMissing="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toLeftOf="@+id/tvOp"
+                        android:layout_toRightOf="@+id/ivIcon"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="?text_color"
+                            android:textSize="18dip" />
+
+                        <TextView
+                            android:id="@+id/tvCreated"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="16dip" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <include
+                    android:id="@+id/viewDiv"
+                    layout="@layout/view_div" />
+
+                <TextView
+                    android:id="@+id/tvIntro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:autoLink="all"
+                    android:text=""
+                    android:textColor="@color/gray"
+                    android:textSize="14dip" />
+
+
+            </LinearLayout>
+
+
+            <tr.xip.errorview.ErrorView xmlns:errorview="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/error_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                errorview:ev_retryButtonTextColor="?text_color" />
+
+
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

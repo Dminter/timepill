@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="nav_menu_items">
+        <item>日记本</item>
+        <item>关注/被关注/屏蔽</item>
+        <item>注销登录</item>
+        <item>V1.1.0</item>
+    </string-array>
+
+
+</resources>
