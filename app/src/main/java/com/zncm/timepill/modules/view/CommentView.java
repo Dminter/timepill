@@ -17,7 +17,6 @@ import com.rockerhieu.emojicon.EmojiconEditText;
 import com.rockerhieu.emojicon.EmojiconGridFragment;
 import com.rockerhieu.emojicon.EmojiconsFragment;
 import com.rockerhieu.emojicon.emoji.Emojicon;
-import com.umeng.analytics.MobclickAgent;
 import com.zncm.timepill.R;
 import com.zncm.timepill.data.EnumData;
 import com.zncm.timepill.data.base.chat.MsgData;

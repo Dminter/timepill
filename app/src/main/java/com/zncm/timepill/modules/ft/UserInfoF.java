@@ -17,7 +17,6 @@ import android.widget.TextView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.malinskiy.materialicons.Iconify;
-import com.umeng.analytics.MobclickAgent;
 import com.zncm.timepill.R;
 import com.zncm.timepill.data.EnumData;
 import com.zncm.timepill.data.base.base.MiniUserData;
@@ -182,7 +181,6 @@ public class UserInfoF extends Fragment {
                     @Override
                     public void success(UserData userData, Response response) {
                         EventBus.getDefault().post(new RefreshEvent(EnumData.RefreshEnum.PEOPLE_ATTENTION.getValue()));
-                        MobclickAgent.onEvent(getActivity(), "relation");
                         XUtil.tShort("关注成功~");
                         bAttention = true;
                         if (tvOp != null) {

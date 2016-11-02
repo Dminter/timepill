@@ -7,7 +7,6 @@ import android.widget.EditText;
 
 import com.alibaba.fastjson.JSON;
 import com.malinskiy.materialicons.Iconify;
-import com.umeng.analytics.MobclickAgent;
 import com.zncm.timepill.R;
 import com.zncm.timepill.data.EnumData;
 import com.zncm.timepill.data.base.base.UserData;
@@ -142,17 +141,6 @@ public class UserUpdateAc extends BaseAc {
                 XUtil.onFailure(error);
             }
         });
-    }
-
-
-    public void onResume() {
-        super.onResume();
-        MobclickAgent.onResume(this);
-    }
-
-    public void onPause() {
-        super.onPause();
-        MobclickAgent.onPause(this);
     }
 
 

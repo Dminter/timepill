@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 import com.github.johnpersano.supertoasts.SuperActivityToast;
 import com.github.johnpersano.supertoasts.SuperToast;
-import com.umeng.analytics.MobclickAgent;
 import com.zncm.timepill.R;
 import com.zncm.timepill.data.base.base.UserData;
 import com.zncm.timepill.global.TpApplication;
@@ -92,18 +91,6 @@ public class RegAc extends BaseAc {
             e.printStackTrace();
         }
 
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        MobclickAgent.onResume(this);
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        MobclickAgent.onPause(this);
     }
 
 

@@ -1,11 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'packer'
-
-project.ext.appsettings = [
-        'keyfile' : "zncm.zncm123456",
-        'keyalias': "zncm",
-        'keycert' : "zncm123456",
-]
 
 android {
     compileSdkVersion 23
@@ -17,20 +10,6 @@ android {
         targetSdkVersion 19
         versionCode 313
         versionName '3.1.3'
-    }
-
-    signingConfigs {
-
-        release {
-            storeFile file("${project.ext.appsettings['keyfile']}")
-            storePassword project.ext.appsettings['keycert']
-            keyAlias project.ext.appsettings['keyalias']
-            keyPassword project.ext.appsettings['keycert']
-        }
-//        debug {
-//            storeFile file("debug.keystore")
-//        }
-
     }
 
 
@@ -48,7 +27,6 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.umeng.analytics:analytics:latest.integration'
     compile 'com.squareup.retrofit:retrofit:1.9.0'
     compile 'com.nostra13.universalimageloader:universal-image-loader:+'
     compile 'com.malinskiy:materialicons:1.0.1'
@@ -59,9 +37,7 @@ dependencies {
     compile files('libs/jpush-sdk-release1.6.1.jar')
     compile files('libs/ormlite-android-4.43.jar')
     compile files('libs/ormlite-core-4.43.jar')
-    compile project(':umemgsdk')
     compile 'com.android.support:appcompat-v7:23.0.1'
-
     compile('com.github.afollestad.material-dialogs:core:0.8.5.7@aar') {
         transitive = true
     }
@@ -71,6 +47,5 @@ dependencies {
     compile 'com.lguipeng.bubbleview:library:1.0.0'
     compile 'com.jude:swipebackhelper:2.1.5'
     compile 'com.rockerhieu.emojicon:library:1.3.3'
-
     compile 'com.mcxiaoke.gradle:packer-helper:1.0.4'
 }

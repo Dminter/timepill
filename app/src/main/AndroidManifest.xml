@@ -57,15 +57,12 @@
         <activity android:name=".modules.ui.NoteBookAc" />
         <activity android:name=".modules.ui.NoteInBookAc" />
         <activity android:name=".modules.ui.FloatingTitleBarActivity" />
-        <activity android:name="com.zncm.timepill.modules.view.pick.CustomGalleryActivity" />
         <activity android:name="com.zncm.timepill.modules.ui.RelationAc" />
         <activity android:name=".modules.ui.UserUpdateAc" />
         <activity
             android:name=".modules.ui.PwdActivity"
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
         <activity android:name="com.zncm.timepill.modules.ui.SettingAc" />
-        <activity android:name=".modules.ui.TalkListAc" />
-        <activity android:name=".modules.ui.DraftListAc" />
         <activity android:name=".modules.ui.AboutAc" />
         <activity android:name=".modules.ui.ThanksActivity" />
         <activity
@@ -73,31 +70,7 @@
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity android:name=".modules.ui.SplashAc" />
 
-        <!-- UMENG_ADD -->
-
-
-        <meta-data
-            android:name="UMENG_APPKEY"
-            android:value="53a8defb56240b03ee0016f9"></meta-data>
-        <meta-data
-            android:name="UMENG_CHANNEL"
-            android:value="mx300"></meta-data>
-
-
-        <service
-            android:name="com.umeng.update.net.DownloadingService"
-            android:process=":DownloadingService"></service>
-        <activity
-            android:name="com.umeng.update.UpdateDialogActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
-
-
-        <!-- UMENG_END -->
-
-
         <!--  jpush-->
-
-
         <!-- Required SDK核心功能-->
         <activity
             android:name="cn.jpush.android.ui.PushActivity"

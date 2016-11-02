@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/timepill.iml" filepath="$PROJECT_DIR$/timepill.iml" />
-      <module fileurl="file://$PROJECT_DIR$/umemgsdk/umemgsdk.iml" filepath="$PROJECT_DIR$/umemgsdk/umemgsdk.iml" />
     </modules>
   </component>
 </project>

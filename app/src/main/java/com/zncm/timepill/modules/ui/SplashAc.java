@@ -12,10 +12,7 @@ import android.widget.TextView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.alibaba.fastjson.JSON;
-import com.umeng.analytics.MobclickAgent;
-import com.umeng.update.UmengUpdateAgent;
-import com.umeng.update.UmengUpdateListener;
-import com.umeng.update.UpdateResponse;
+
 import com.zncm.timepill.R;
 import com.zncm.timepill.data.EnumData;
 import com.zncm.timepill.data.base.base.UserData;
@@ -39,12 +36,6 @@ public class SplashAc extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ac_splash);
-        try {
-            goUpdate();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
 //        splash_img = MobclickAgent.getConfigParams(this, "splash_img");
 //        if (StrUtil.notEmptyOrNull(splash_img)) {
 //            TpSp.setSplashImg(splash_img);
@@ -112,20 +103,5 @@ public class SplashAc extends Activity {
 
     };
 
-    // 友盟自动更新监听
-    private void goUpdate() {
-        UmengUpdateAgent.update(this);
-        UmengUpdateAgent.setUpdateAutoPopup(false);
-        UmengUpdateAgent.setUpdateOnlyWifi(false);
-        UmengUpdateAgent.setUpdateListener(new UmengUpdateListener() {
-            @Override
-            public void onUpdateReturned(int updateStatus, UpdateResponse updateInfo) {
-                switch (updateStatus) {
-                    case 0:
-                        UmengUpdateAgent.showUpdateDialog(SplashAc.this, updateInfo);
-                        break;
-                }
-            }
-        });
-    }
+
 }

@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 import com.github.johnpersano.supertoasts.SuperActivityToast;
 import com.github.johnpersano.supertoasts.SuperToast;
-import com.umeng.analytics.MobclickAgent;
 import com.zncm.timepill.R;
 import com.zncm.timepill.data.base.base.UserData;
 import com.zncm.timepill.global.TpConstants;
@@ -35,7 +34,7 @@ public class LoginAc extends BaseAc {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setTitle("胶囊-登录");
+        getSupportActionBar().setTitle("胶囊-登录[2016年10月18日]");
         toolbar.setNavigationIcon(null);
         etUserName = (EditText) findViewById(R.id.etUserName);
         etUserPWD = (EditText) findViewById(R.id.etUserPWD);
@@ -90,10 +89,6 @@ public class LoginAc extends BaseAc {
                     }
                     progressToast.dismiss();
                     TpSp.setUserEmail(userName);
-                    if (TpConstants.betaVersion) {
-                        MobclickAgent.onEvent(LoginAc.this, "betaLogin");
-                    }
-                    MobclickAgent.onEvent(LoginAc.this, "login");
                     userData.setAccess_token(tokenStr);
                     TpApplication.getInstance().setUserData(userData);
                     TpSp.setUserInfo(userData.toString());

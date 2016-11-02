@@ -13,7 +13,6 @@ import android.widget.LinearLayout;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.malinskiy.materialicons.Iconify;
-import com.umeng.analytics.MobclickAgent;
 import com.zncm.timepill.R;
 import com.zncm.timepill.data.EnumData;
 import com.zncm.timepill.data.base.base.MiniUserData;
@@ -113,7 +112,6 @@ public class NoteCommentAc extends BaseAc {
     }
 
 
-
     @Override
     protected int getLayoutResource() {
         return R.layout.ac_note_comment;
@@ -137,6 +135,7 @@ public class NoteCommentAc extends BaseAc {
             XUtil.tShort("网络连接不可用!");
         }
     }
+
     public static void replyDo(final String content, Integer recipient_id, Integer _id) {
         try {
             ServiceFactory.getService(NoteService.class).notesComment(_id, content, recipient_id, new Callback<Response>() {

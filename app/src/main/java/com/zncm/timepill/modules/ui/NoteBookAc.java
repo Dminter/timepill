@@ -18,7 +18,6 @@ import android.widget.ImageView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.malinskiy.materialicons.Iconify;
-import com.umeng.analytics.MobclickAgent;
 import com.zncm.timepill.R;
 import com.zncm.timepill.data.EnumData;
 import com.zncm.timepill.data.base.note.NoteBookData;
@@ -327,7 +326,6 @@ public class NoteBookAc extends BaseAc {
                     ServiceFactory.getService(NotebooksService.class).setNotebookCover(data.getId(), new TypedFile("image/jpeg", tmp), new Callback<Response>() {
                         @Override
                         public void success(Response response, Response response2) {
-                            MobclickAgent.onEvent(NoteBookAc.this, "uploadCover");
                             XUtil.getImageLoader().getMemoryCache().clear();
                             XUtil.getImageLoader().getDiskCache().clear();
                             XUtil.tShort("修改头像成功~");
@@ -344,16 +342,6 @@ public class NoteBookAc extends BaseAc {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public void onResume() {
-        super.onResume();
-        MobclickAgent.onResume(this);
-    }
-
-    public void onPause() {
-        super.onPause();
-        MobclickAgent.onPause(this);
     }
 
 

@@ -15,7 +15,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.umeng.analytics.MobclickAgent;
 import com.zncm.timepill.R;
 import com.zncm.timepill.data.EnumData;
 import com.zncm.timepill.data.base.base.UserData;
@@ -162,7 +161,7 @@ public class UserSettingFt extends BaseFt {
 
     private void doTakePhoto() {
         try {
-            curImgPath = TimeUtils.getFileSaveTime() ;
+            curImgPath = TimeUtils.getFileSaveTime();
             File mCurrentPhotoFile = new File(MyPath.getPathPicture(), curImgPath);
             final Intent intent = getTakePickIntent(mCurrentPhotoFile);
             startActivityForResult(intent, TpConstants.PICTURE_TAKE);
@@ -227,7 +226,6 @@ public class UserSettingFt extends BaseFt {
         ServiceFactory.getService(UserService.class).setUserCover(new TypedFile("image/jpeg", new File(upFilePath)), new Callback<Response>() {
             @Override
             public void success(Response response, Response response2) {
-                MobclickAgent.onEvent(ctx, "uploadHead");
                 XUtil.tShort("修改头像成功~");
                 getUserInfo();
             }
@@ -248,7 +246,6 @@ public class UserSettingFt extends BaseFt {
                 if (userData == null) {
                     return;
                 }
-                MobclickAgent.onEvent(ctx, "getUserInfo");
                 UserSettingFt.this.userData = userData;
                 userData.setAccess_token(TpApplication.getInstance().getUserData().getAccess_token());
                 TpApplication.getInstance().setUserData(userData);

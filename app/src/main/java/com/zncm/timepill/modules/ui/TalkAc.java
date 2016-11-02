@@ -21,7 +21,6 @@ import com.j256.ormlite.stmt.QueryBuilder;
 import com.rockerhieu.emojicon.EmojiconGridFragment;
 import com.rockerhieu.emojicon.EmojiconsFragment;
 import com.rockerhieu.emojicon.emoji.Emojicon;
-import com.umeng.analytics.MobclickAgent;
 import com.zncm.timepill.R;
 import com.zncm.timepill.data.EnumData;
 import com.zncm.timepill.data.base.base.MiniUserData;
@@ -208,7 +207,6 @@ public class TalkAc extends BaseAc implements EmojiconGridFragment.OnEmojiconCli
                 msg.setFriend_id(me.getId());
                 msg.setUser_id(friend.getId());
                 sendMsg(msg.toString());
-                MobclickAgent.onEvent(ctx, "talk_send");
                 commentView.etContent.setText("");
             }
         });
@@ -324,7 +322,6 @@ public class TalkAc extends BaseAc implements EmojiconGridFragment.OnEmojiconCli
     @Override
     protected void onResume() {
         super.onResume();
-        MobclickAgent.onResume(this);
         TpApplication.getInstance().setTalkBackground(false);
         registerMsgReceiver();
     }
@@ -332,7 +329,6 @@ public class TalkAc extends BaseAc implements EmojiconGridFragment.OnEmojiconCli
     @Override
     protected void onPause() {
         super.onPause();
-        MobclickAgent.onPause(this);
         TpApplication.getInstance().setTalkBackground(true);
         if (msgReceiver != null) {
             unregisterReceiver(msgReceiver);
