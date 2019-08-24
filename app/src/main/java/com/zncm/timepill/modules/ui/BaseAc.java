@@ -72,7 +72,6 @@ public abstract class BaseAc extends ActionBarActivity {
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
         if (swipeBackOn) {
-
             SwipeBackHelper.onPostCreate(this);
         }
     }

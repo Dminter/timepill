@@ -1,35 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:background="@color/bg_color"
-              android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
 
-    <include layout="@layout/toolbar"/>
+
+    <include layout="@layout/toolbar" />
 
 
     <RelativeLayout
-
-
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
-        android:layout_marginBottom="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:layout_marginTop="40dp"
-
-
+        android:layout_marginRight="20dp"
         >
-
-
-        <TextView
-            android:id="@+id/btnReg"
-            style="@style/mButtonBigFullWhite"
-            android:layout_alignParentBottom="true"
-            android:text="没有账号？请注册"
-            android:textColor="#566B95"/>
-
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -37,28 +25,18 @@
             android:layout_above="@+id/btnReg"
             android:layout_alignParentTop="true"
             android:layout_gravity="center_horizontal"
-
             android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ic_launcher"/>
-
 
             <EditText
                 android:id="@+id/etUserName"
                 style="@style/mEditText"
-                android:layout_marginTop="40dp"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
                 android:drawableLeft="@drawable/ic_action_person"
                 android:drawablePadding="10dp"
                 android:hint="邮箱"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
 
 
             <EditText
@@ -71,20 +49,40 @@
                 android:drawablePadding="10dp"
                 android:hint="密码"
                 android:inputType="textPassword"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_launcher" />
 
 
             <TextView
                 android:id="@+id/btnLogin"
                 style="@style/mButtonBigFull"
                 android:layout_marginTop="20dp"
-                android:text="登录"/>
+                android:text="登录" />
 
 
         </LinearLayout>
 
 
+        <TextView
+            android:id="@+id/btnReg"
+            style="@style/mButtonBigFullWhite"
+            android:layout_alignParentBottom="true"
+            android:text="没有账号？请注册"
+            android:textColor="#566B95" />
+
+
     </RelativeLayout>
+
+
+
 
 
 </LinearLayout>

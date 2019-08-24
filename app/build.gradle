@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "com.zncm.timepill"
         minSdkVersion 14
-        targetSdkVersion 19
+        targetSdkVersion 24
         versionCode 313
         versionName '3.1.3'
     }

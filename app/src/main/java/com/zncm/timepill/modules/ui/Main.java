@@ -5,12 +5,17 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
+import com.alibaba.fastjson.JSON;
 import com.zncm.timepill.data.EnumData;
+import com.zncm.timepill.data.base.base.UserData;
+import com.zncm.timepill.global.TpApplication;
 import com.zncm.timepill.global.TpConstants;
 import com.zncm.timepill.utils.DeviceUtil;
 import com.zncm.timepill.utils.StrUtil;
 import com.zncm.timepill.utils.XUtil;
 import com.zncm.timepill.utils.sp.TpSp;
+
+import cn.jpush.android.api.JPushInterface;
 
 public class Main extends Activity {
 
@@ -19,31 +24,21 @@ public class Main extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-        try {
-
-            int color = Color.parseColor("#2DBD60");
-            XUtil.debug("color:" + color);
-
-        } catch (Exception e) {
-
-        }
-
-
         ctx = this;
-        if (TpSp.getAppVersionCode() != null && DeviceUtil.getVersionCode(ctx) != null
-                && DeviceUtil.getVersionCode(ctx) > TpSp.getAppVersionCode()) {
-            // 记录最新版本号,下次进入不再显示引导页
-            TpSp.setAppVersionCode(DeviceUtil.getVersionCode(ctx));
-            if (TpConstants.betaVersion) {
-                TpSp.setUserInfo(null);
-            }
-        }
         String pwd = TpSp.getPwdInfo();
         if (StrUtil.isEmptyOrNull(pwd)) {
-            Intent intent = new Intent(this, SplashAc.class);
-            startActivity(intent);
+            String userInfo = TpSp.getUserInfo();
+            if (StrUtil.notEmptyOrNull(userInfo)) {
+                JPushInterface.init(getApplicationContext());
+                JPushInterface.resumePush(getApplicationContext());
+                UserData userData = JSON.parseObject(userInfo, UserData.class);
+                JPushInterface.setAliasAndTags(getApplicationContext(), String.valueOf(userData.getId()), null, null);
+                TpApplication.getInstance().setUserData(userData);
+                XUtil.getNoteBook();
+                startActivity(new Intent(Main.this, HomeTabActivity.class));
+            } else {
+                startActivity(new Intent(Main.this, LoginAc.class));
+            }
             finish();
         } else {
             Intent intent = new Intent(this, PwdActivity.class);

@@ -34,7 +34,7 @@ public class LoginAc extends BaseAc {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setTitle("胶囊-登录[2016年10月18日]");
+        getSupportActionBar().setTitle("登录");
         toolbar.setNavigationIcon(null);
         etUserName = (EditText) findViewById(R.id.etUserName);
         etUserPWD = (EditText) findViewById(R.id.etUserPWD);
@@ -92,7 +92,7 @@ public class LoginAc extends BaseAc {
                     userData.setAccess_token(tokenStr);
                     TpApplication.getInstance().setUserData(userData);
                     TpSp.setUserInfo(userData.toString());
-                    Intent intent = new Intent(LoginAc.this, SplashAc.class);
+                    Intent intent = new Intent(LoginAc.this, Main.class);
                     startActivity(intent);
                     finish();
                 }
